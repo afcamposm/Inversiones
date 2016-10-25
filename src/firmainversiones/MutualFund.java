@@ -17,7 +17,6 @@ public class MutualFund extends ShareAsset {
         this.totalShare = totalShare;
     }
 
-    
     @Override
     public double getMarketValue() {
       return (this.totalShare*this.currentPrice);   
@@ -27,6 +26,5 @@ public class MutualFund extends ShareAsset {
     public double getProfit() {
        return (this.totalShare*this.currentPrice)-this.totalCost;   
     }
-    
-    
+  
 }
